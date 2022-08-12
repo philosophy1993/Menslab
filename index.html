@@ -4,227 +4,25 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BugFix Web Page</title>
-  <link rel="stylesheet" href="./assets/css/sanitize.css">
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Men's Lab</title>
 
-  <link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-17/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-11/css/5-11.css">
+  <!-- <link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-17/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-17/css/5-17.css"> -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/opening.css">
+
 </head>
-
-
 <body>
-  <canvas id="waveCanvas" class="fixed-bottom"></canvas>
-
-<!-- navigationbar begin -->
-<nav class="navbar navbar-expand-lg navbar-light bg-secondary shadow-sm fixed-top">
-  <div class="container-fluid">
-    <a href="index.html" class="navbar-brand"><i class="bi bi-image me-1"></i>Men's Labo</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a href="index.html" class="nav-link active">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">Contact Us</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">About</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+  <<a href="open.html" class="mainpage">
+  <div id="wrapper">
+    <canvas id="particle"></canvas>
+    <!--/wrapper--></div></a>
 
 
-<input type="button" id ="count" class="0" value="クリックしてね">
-
-  <header class="header-comp">
-    <h1 class="header-head">Men's Labo<br>About us</h1>
-    <div class="head contain">
-      <img src="./assets/images/one_step.png" alt="What we can do?" class="header-img">
-      <dl class="header-desc">
-        <dt class="header">What we cand do?</dt>
-        <dd class="desc">
-          私たちは本業の傍ら自分たちの技術力の向上を目指し、
-          多様なアプリやウェブサイトの制作を行っています。<br>
-      </dl>
-    </div>
-  </header>
-  <div class="main1">
-    <h1 class="feature">Our Profile</h1>
-    <ul class=contain>
-      <li class="feature-list2">
-        <dl class="contanier-box">
-          <dd class="feature-head">Tetsugaku<br>Okamoto</dd>
-          <dt class="feature-img"><img src="./assets/images/E5D6C887-DB36-4BCF-BC43-C5740A101CF7.jpeg" alt="1.Great Service" class="img"></dt>
-          <dt class="feature-desc">埼玉大学理工学研究科卒業<br>三菱電機入社<br>スキル:<br>Neural NetWorkモデル開発(python) <br>(LSTMのEncode-Decodeモデルをタイムスケールが膨大な動力学に拡張し適応するモデルを開発)</dt>
-        </dl>
-      </li>
-      <li class="feature-list2">
-        <dl class="contanier-box">
-        <dd class="feature-head">Kengo<br>Imamura</dd>
-        <dt class="feature-img"><img src="./assets/images/3C76AE32-8185-4A70-87C4-DF4590B064C6.jpeg" alt="2.High Performance" class="img"></dt>
-        <dt class="feature-desc">text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</dt>
-      </dl>      
-      </li>
-    </ul>
-  </div>
-
-  <main2>
-    <h1 class="main2-header">Portfolio</h1>
-  <!--スクロールしてふわっ-->
-  <ul class="flex delayScroll">
-    <li class="box">
-      <dl class="contanier-box4">
-        <dt><img src="https://placehold.jp/200x100.png" alt="1.Great Service" class="blog-img"></dt>
-        <dd class="new">new</dd>
-        <time detetime="2022-08-01">2022.08.01</time>
-        <dd class="blog-head">Google Map評価を基準にした飲食店ソート</dd>
-        <dt class="blog-desc">Google Mapで飲食店を検索します。
-          <br>総合評価でしきい値を設けることで数多くある飲食店からベストな飲食店を探すことができます。
-          <br>また、検索後はレビューが一覧となっているため、ページ遷移なしで読みやすくなっております。</dt>
-      </dl>
-    <li class="box">
-      <dl class="contanier-box4">
-        <dt><img src="https://placehold.jp/200x100.png" alt="2.High Performance" class="blog-img"></dt>
-        <dd class="new">new</dd>
-        <dd class="blog-time">
-          <time detetime="2022-08-09">2022.08.01</time>
-        </dd>
-        <dd class="blog-head">2.High Performance</dd>
-        <dt class="blog-desc">text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</dt>
-      </dl>
-    </li>
-    <li class="box">
-      <dl class="contanier-box4">
-        <dt><img src="https://placehold.jp/200x100.png" alt="3.Strong Responsibility" class="blog-img"></dt>
-        <dd class="new">new</dd>
-        <time detetime="2022-08-09">2022.08.01</time>
-        <dd class="blog-head">3.Strong Responsibility</dd>
-        <dt class="blog-desc">text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</dt>
-      </dl>
-    </li>
-    <li class="box">
-      <dl class="contanier-box4">
-        <dt><img src="https://placehold.jp/200x100.png" alt="1.Great Service" class="blog-img"></dt>
-        <dd class="new">new</dd>
-        <time detetime="2022-08-09">2022.08.01</time>
-        <dd class="blog-head">1.Great Service</dd>
-        <dt class="blog-desc">text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</dt>
-      </dl>
-    <li class="box">
-      <dl class="contanier-box4">
-        <dt><img src="https://placehold.jp/200x100.png" alt="2.High Performance" class="blog-img"></dt>
-        <dd class="new">new</dd>
-        <dd class="blog-time">
-          <time detetime="2022-08-09">2022.08.01</time>
-        </dd>
-        <dd class="blog-head">2.High Performance</dd>
-        <dt class="blog-desc">text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</dt>
-      </dl>
-    </li>
-    <li class="box">
-      <dl class="contanier-box4">
-        <dt><img src="https://placehold.jp/200x100.png" alt="3.Strong Responsibility" class="blog-img"></dt>
-        <dd class="new">new</dd>
-        <time detetime="2022-08-09">2022.08.01</time>
-        <dd class="blog-head">3.Strong Responsibility</dd>
-        <dt class="blog-desc">text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</dt>
-      </dl>
-    </li>
-    <li class="box">
-      <dl class="contanier-box4">
-        <dt><img src="https://placehold.jp/200x100.png" alt="1.Great Service" class="blog-img"></dt>
-        <dd class="new">new</dd>
-        <time detetime="2022-08-09">2022.08.01</time>
-        <dd class="blog-head">1.Great Service</dd>
-        <dt class="blog-desc">text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</dt>
-      </dl>
-    <li class="box">
-      <dl class="contanier-box4">
-        <dt><img src="https://placehold.jp/200x100.png" alt="2.High Performance" class="blog-img"></dt>
-        <dd class="new">new</dd>
-        <dd class="blog-time">
-          <time detetime="2022-08-09">2022.08.01</time>
-        </dd>
-        <dd class="blog-head">2.High Performance</dd>
-        <dt class="blog-desc">text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</dt>
-      </dl>
-    </li>
-    <li class="box">
-      <dl class="contanier-box4">
-        <dt><img src="https://placehold.jp/200x100.png" alt="3.Strong Responsibility" class="blog-img"></dt>
-        <dd class="new">new</dd>
-        <time detetime="2022-08-09">2022.08.01</time>
-        <dd class="blog-head">3.Strong Responsibility</dd>
-        <dt class="blog-desc">text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</dt>
-      </dl>
-    </li>
-  </ul>
-</main2>
-<!-- <main3>
-    <ul class="container-3">
-      <li class="blog-list">
-        <dl class="contanier-box4">
-          <dt><img src="https://placehold.jp/200x100.png" alt="1.Great Service" class="blog-img"></dt>
-          <dd class="new">new</dd>
-          <time detetime="2022-08-09">2022.08.01</time>
-          <dd class="blog-head">1.Great Service</dd>
-          <dt class="blog-desc">text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</dt>
-        </dl>
-      </li>
-      <li class="blog-list">
-        <dl class="contanier-box4">
-          <dt><img src="https://placehold.jp/200x100.png" alt="2.High Performance" class="blog-img"></dt>
-          <dd class="new">new</dd>
-          <dd class="blog-time">
-            <time detetime="2022-08-09">2022.08.01</time>
-          </dd>
-          <dd class="blog-head">2.High Performance</dd>
-          <dt class="blog-desc">text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</dt>
-        </dl>
-      </li>
-      <li class="blog-list">
-        <dl class="contanier-box4">
-          <dt><img src="https://placehold.jp/200x100.png" alt="3.Strong Responsibility" class="blog-img"></dt>
-          <dd class="new">new</dd>
-          <time detetime="2022-08-09">2022.08.01</time>
-          <dd class="blog-head">3.Strong Responsibility</dd>
-          <dt class="blog-desc">text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</dt>
-        </dl>
-      </li>
-    </ul>
-  </main3> -->
-<!--footer begin-->
-
-
-<footer>
-  <ul>
-    <li><a href="website.html">ホーム</a></li>
-    <li><a href="#">商品情報</a></li>
-    <li><a href="#">店舗紹介</a></li>
-    <li><a href="#">アクセス</a></li>
-    <li><a href="#">会社情報</a></li>
-    <li><a href="#">お問い合わせ</a></li>
-  </ul>
-  <small> &copy;  2022 Men's Labo </small>
-</footer>
-<!--fotter end-->
-
-  <script src="./assets/js/app.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/4-12/js/4-12.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  <script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-11/js/5-11.js"></script>
-  <!-- <script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-17/js/particleText.js"></script> -->
-  <!-- <script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-17/js/5-17.js"></script> -->
-</body>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+    <script src="./assets/js/particleText.js"></script>
+    <script src="./assets/js/openning.js"></script>
+    <!-- <script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-17/js/5-17.js"></script> -->
+<script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-11/js/5-11.js"></script>
+  
+  </body>
 </html>

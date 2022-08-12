@@ -1,0 +1,238 @@
+@charset "utf-8";
+
+body{
+  font-family: 'Noto Sans JP', "Helvetica Neue",
+  Arial,
+  "Hiragino Kaku Gothic ProN",
+  "Hiragino Sans",
+  Meiryo,
+  sans-serif;
+  
+}
+
+.header-comp{
+  text-align: center;
+  width: 80%;
+  margin-top: 2.5em;
+
+}
+
+header{
+  display:flex;
+  /* justify-content: center; */
+  flex-wrap: nowrap;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+} 
+.header-img{
+  width: 50%;
+  /* height: auto; */
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size:cover;
+
+}
+
+dl.header-desc{
+  margin: 0 0 0 10px;
+}
+dt.header{
+  font-size: 24px;
+  font-weight: bold;
+}
+dd.desc{
+  margin: 20px 0 0 0;
+  text-align: left;
+  font-size: 14;
+  /* color:red; */
+}
+
+.main1{
+  width: 60%;
+  margin: 50px auto 0 auto;
+}
+
+.feature{
+  margin-top: 30px;
+  text-align: center;
+
+}
+.contain{
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+}
+
+.feature-list3{
+  width: 30%;
+  height: auto;
+  list-style: none;
+  margin: 0 10px 0 10px;
+}
+.feature-list2{
+  width: 50%;
+  height: auto;
+  list-style: none;
+  margin: 0 10px 0 10px;
+}
+.feature-head{
+  text-align: center;
+  font-size: 24px;
+  height: 4em;
+  font-weight: bold;
+  margin: 0px ;
+
+}
+
+.img{
+  width: 100%;
+}
+.feature-desc{
+
+}
+
+.main2-header{
+  margin-top: 30px;
+  text-align: center;
+}
+
+.container-3{
+  display: flex;
+  justify-content: space-between;
+}
+.blog-list{
+  width: 30%;
+  margin-right: 10px;
+  height: auto;
+  list-style: none;
+  position:relative;
+}
+.new{
+  position:absolute;
+  top:0%;
+
+  background-color: #999;
+  width: 80px;
+  height: 60px;
+  text-align: center;
+  margin-left: 0;
+  line-height: 60px;
+
+
+}
+.blog-time{
+  text-align: left;
+  margin-left: 0;
+  font-size: 14px;
+
+}
+
+
+.blog-img{
+  width: 100%;
+  height: auto;
+
+
+}
+.blog-head{
+  text-align: left;
+  margin-left: 0px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.blog-desc{
+  
+}
+
+@charset "utf-8";
+
+/*========= レイアウトのためのCSS ===============*/
+body {
+	overflow: hidden;
+}
+
+.flex{
+	display:flex;
+	flex-wrap: wrap;
+}
+
+.box{
+	width: 30%;
+	padding: 20px;
+    margin: 0 10px 20px 10px;
+	background: #666;
+	color: #fff;
+	box-sizing:border-box;
+    list-style: none;
+}
+
+/*==================================================
+スタート時は要素自体を透過0にするためのopacity:0;を指定する
+===================================*/
+
+.box{
+	opacity: 0;
+}
+
+/*==================================================
+ふわっ
+===================================*/
+
+.fadeUp {
+animation-name:fadeUpAnime;
+animation-duration:3.5s;
+animation-fill-mode:forwards;
+opacity: 0;
+}
+
+@keyframes fadeUpAnime{
+  from {
+    opacity: 0;
+	transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+	transform: translateY(0);
+  }
+}
+
+/* footer */
+footer{
+  margin-top: 100px;
+  padding: 30px;
+  text-align: center;
+  background-color: #999;
+  color: #fff;
+
+}
+footer ul{
+  margin: 0px auto 0px auto;
+  width: 50%;
+  margin-bottom: 20px;
+  font-size: 0.9em;
+  text-decoration: none;
+}
+footer ul li{
+  display: inline-block;
+  margin: 5px;
+}
+footer ul li a{
+  color: #fff;
+}
+
+footer ul li a:link{
+  text-decoration: none;
+}
+
+footer ul li a:hover,
+footer ul li a:active{
+  opacity: .7;
+}
+
+small{
+  font-size: 0.7em;
+}
